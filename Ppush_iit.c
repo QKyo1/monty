@@ -1,4 +1,4 @@
-#include "mmonty.h"
+#include "monty.h"
 /**
  * f_push - a functionn to pushh
  * @head: head of the stack
@@ -31,7 +31,7 @@ void f_push(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE); }
 	x = atoi(bus.arg);
 	if (bus.lifi == 0)
-		addnode(head, n);
+		addnode(head, x);
 	else
-		addqueue(head, n);
+		addqueue(head, x);
 }
